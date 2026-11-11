@@ -1,0 +1,14 @@
+{
+    "todos.actions.add": {
+        "app/Domains/Todos/Panel/Actions/TodosActionsAdd.php": "ee63c51527e19851a5e3d89ca865da82d700277ccd1a3898ad20e0b5f76ae9f0"
+    },
+    "todos.actions.add.form": {
+        "app/Domains/Todos/Panel/Forms/TodosActionsAddForm.php": "c2869d91cc111fe61ddf6126aaad279becf07299f78d7e38b54b533607a87d41"
+    },
+    "todos.pages.manage": {
+        "app/Domains/Todos/Panel/Pages/TodosPagesManage.php": "cb94f944b23f8ef8396f5a5984a7dc61661ffb8b6acce1926e1950848445f42e"
+    },
+    "todos.table": {
+        "app/Domains/Todos/Panel/Tables/TodosTable.php": "49a8f37f22a1ba14bb931d9a8e9bacf7a8c15d6c9f52c4e5d5fa89e68895cc5b"
+    }
+}
