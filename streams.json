@@ -5,6 +5,12 @@
     "streams": {
         "todos": {
             "$ref": "streams/todos.json"
+        },
+        "categories": {
+            "$ref": "streams/categories.json"
+        },
+        "tags": {
+            "$ref": "streams/tags.json"
         }
     }
 }

@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "ryantompson/todos",
+    "name": "ryanthompson/todos",
     "type": "project",
     "description": "\ud83e\uddc2 Golden Todos app \u2014 regenerated from SALLT streams:onboard kitchen-sink.",
     "keywords": [
@@ -14,8 +14,10 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "streams/api": "1.0.x-dev",
         "streams/core": "2.0.x-dev",
-        "streams/sdk": "dev-1.0#563babf4801b4058ce9a4fd82877314c26e74a71"
+        "streams/sdk": "dev-1.0#563babf4801b4058ce9a4fd82877314c26e74a71",
+        "streams/ui": "1.0.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -27,6 +29,16 @@
         "phpunit/phpunit": "^11.5.50"
     },
     "repositories": [
+        {
+            "type": "path",
+            "url": "../_packages/streams-api",
+            "options": { "symlink": true }
+        },
+        {
+            "type": "path",
+            "url": "../_packages/streams-ui",
+            "options": { "symlink": true }
+        },
         {
             "type": "path",
             "url": "../_packages/streams-sdk",
@@ -67,6 +79,9 @@
         "test": [
             "@php artisan config:clear --ansi",
             "@php artisan test"
+        ],
+        "golden:check": [
+            "@php artisan streams:onboard --recipe=streams.onboard.json --check --no-write"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
